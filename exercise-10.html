@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMy Web Page</title>
+
+    <style>
+  /* Style for the output container */
+  #output-container {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+
+  </head>
+<!----------------------------------------------------------------->
+    <body>
+
+        <h1>User Information</h1>
+
+        <!-- Input fields for name, age, and occupation -->
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age"><br><br>
+
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation"><br><br>
+
+        <!-- Button to display user information -->
+        <button onclick="displayUserInfo()">Display Information</button>
+
+        <!-- Container to display the user information -->
+        <div id="output-container">
+            <h2>User Details</h2>
+            <p><strong>Name:</strong> <span id="output-name"></span></p>
+            <p><strong>Age:</strong> <span id="output-age"></span></p>
+            <p><strong>Occupation:</strong> <span id="output-occupation"></span></p>
+        </div>
+
+    <!---💧💧💧💧 start javascript 💧💧💧💧-->
+
+    <script>
+        function displayUserInfo() {
+            // Get values from input fields
+            var name = document.getElementById('name').value;
+            var age = document.getElementById('age').value;
+            var occupation = document.getElementById('occupation').value;
+
+            // Display the user information
+            document.getElementById('output-name').textContent = name;
+            document.getElementById('output-age').textContent = age;
+            document.getElementById('output-occupation').textContent = occupation;
+
+            // Show the output container
+            document.getElementById('output-container').style.display = 'block';
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMy Web Page</title>
+
+    <style>
+        body { padding: 30px; }
+    </style>
+
+  </head>
+<!----------------------------------------------------------------->
+    <body>
+
+    <!---💧💧💧💧 start javascript 💧💧💧💧-->
+
+    <script>
+
+        function calculateArea(radius) {
+        // Check if the radius is a non-negative number
+        if (radius < 0) {
+            return "Radius must be a non-negative number.";
+        }
+
+        // Calculate the area using the formula A = πr^2
+        const pi = Math.PI;
+        const area = pi * Math.pow(radius, 2);
+        return area;
+        }
+
+        // Test the function
+        const radius = 5;
+        const area = calculateArea(radius);
+        console.log(`The area of a circle with radius ${radius} is ${area}.`);
+
+    </script>
+
+    </body>
+</html>

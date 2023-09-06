@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMy Web Page</title>
+
+    <style>
+        body { padding: 30px; }
+    </style>
+
+  </head>
+<!----------------------------------------------------------------->
+    <body>
+
+    <!---💧💧💧💧 start javascript 💧💧💧💧-->
+
+    <script>
+
+        function reverseString(inputString) {
+        // Split the string into an array of characters, reverse it, and join it back into a string
+        const reversedString = inputString.split('').reverse().join('');
+        return reversedString;
+        }
+
+        // Test the function
+        const originalString = "This is an example";
+        const reversed = reverseString(originalString);
+        console.log("Org:", originalString);
+        console.log("Rev:", reversed);
+
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMy Web Page</title>
+
+    <style>
+        body { padding: 30px; }
+    </style>
+
+  </head>
+<!----------------------------------------------------------------->
+    <body>
+
+    <!---💧💧💧💧 start javascript 💧💧💧💧-->
+
+    <script>
+        
+        function objectToArrays(obj) {
+            const keys = Object.keys(obj).sort(); // Get keys and sort them alphabetically
+            const values = keys.map(key => obj[key]); // Map keys to their corresponding values
+
+            return { keys, values };
+        }
+
+        // Example usage:
+        const myObject = {
+            b: 2,
+            c: 3,
+            a: 1,
+        };
+
+        const result = objectToArrays(myObject);
+        console.log("Sorted Keys:", result.keys);
+        console.log("Corresponding Values:", result.values);
+
+    </script>
+
+    </body>
+</html>
